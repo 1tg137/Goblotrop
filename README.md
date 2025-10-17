@@ -3,9 +3,8 @@
 #In order to replicate the results,
 #this system is open-source.
 #
-#Due to my time restrictions, the system does not have a nice GUI and is not  a self-runner
-# Operating the system needs 
-#an understanding of the underlying concepts and linux.
+#Due to my time restrictions, the system does not have a nice GUI and is not  a self-runner 
+#Operating the system needs an understanding of the underlying concepts and linux.
 #Atleast a master-student in EE or CS should have the understanding to operate the system
 
 
