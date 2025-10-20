@@ -1,0 +1,6 @@
+evaluating/extract/yolov4_front.weights filter=lfs diff=lfs merge=lfs -text
+evaluating/extract/yolov4_side.weights filter=lfs diff=lfs merge=lfs -text
+evaluating/extract/yolov4.conv.137 filter=lfs diff=lfs merge=lfs -text
+evaluating/extract/darknet19_448.conv.23 filter=lfs diff=lfs merge=lfs -text
+evaluating/vid/feivel_f.mp4 filter=lfs diff=lfs merge=lfs -text
+evaluating/vid/feivel_s.mp4 filter=lfs diff=lfs merge=lfs -text
