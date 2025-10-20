@@ -1,0 +1,29 @@
+#This README is just in a very early alpha
+#This is not self-runner and needs an understanding of the underlying system
+#a Master-Student in EE or CS should have the understanding to safely operate the system
+
+These scripts are used to start, stop and test the cameras.
+This will run on the storage server (gob-store) of the system.
+
+Prerequisitions:
+- four cages, each setup as required in the README in the recordings-section
+- Ubuntu / Raspberry Pi OS / Linuxoid System
+- alot of storage
+- SMB share setup for access the storage
+- gigabit connection to the cages
+
+
+usage:
+
+- typically, the system is tested before the videos are startet
+    -> ./trigger_images.sh will trigger all cameras to take a testshot, which are saved onto the SMB-share 
+- the videos can be started via ./cam_start_all.sh
+- to finish the recording, the script ./killcam.sh is used
+- a good practice was to use a cronjob to start and stop the videos to the wanted times
+  -> for us, it was best to start at starttime and stop at the switch between day/nighttime, then start again immediately
+     and stop at switching-time again, ... .
+  -> this leads to a clear separation between dark/bright video files, which is much easier for the neural network to detect
+ 
+
+
+

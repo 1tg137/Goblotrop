@@ -1,0 +1,19 @@
+#This README is just in an very early alpha
+#This is not self-runner and needs an understanding of the underlying system
+#a Master-Student in EE or CS should have the understanding to safely operate the system
+
+vids:
+	- two video files extracted from the measurements
+	- _f = front, _s = side
+	 
+extract:
+	- incorporates the tools used to extract the BoundingBoxes of the house,wheel and mouse from the videos
+	- at the current state, the system used a yolov4 network via darknet (https://github.com/AlexeyAB/darknet)
+	- two example scripts show the usage of:
+			- ./detect front ../vid/feivel_f.mp4		// reads the video file, detects the BB and returns a json file to the result_f folder 
+		  - ./detect side ../vid/feivel_s.mp4
+ 
+evaluate:
+	- these python scripts are used to evaluate the json files created
+	- ./python3 main.py // reads the json files in ../extract/result_f _s and puts out txt files in outdir/ with the corresponding time in s  
+ 

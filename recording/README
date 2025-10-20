@@ -1,0 +1,24 @@
+#This README is just in an very early alpha
+#This is not self-runner and needs an understanding of the underlying system
+#a Master-Student in EE or CS should have the understanding to safely operate the system
+
+These scripts are used to record the videos and transfer them
+to an storage server (gob-store).
+
+Prerequisition:
+- Raspberry Pi 3 (or better)
+- Raspberry Pi OS
+- Raspberry Pi Camera
+- libcameravid
+
+- connected to a gigabit network with valid ip 
+- hostname fits the position in the cage (e.g. gobCam1F -> cage 1 position Front) 
+- access to an SMB share as setup on the gob-store
+- created /mnt/hdd 
+
+usage:
+ 
+- client.py autostart on boot
+- all necessary recording functions are started by the gob-store
+
+
